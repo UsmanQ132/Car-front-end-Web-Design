@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Auto Car</title>
+  <!-- Css  -->
+  <link rel="stylesheet" href="query.css">
+  <!-- Jquery link  -->
+  <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+    crossorigin="anonymous"></script>
+  <!-- fontawesome  -->
+  <script src="https://kit.fontawesome.com/ebbc1aa60f.js" crossorigin="anonymous"></script>
+  <!-- boxicons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+ 
+</head>
+
+<body>
+  <header>
+    <div class="logo">PAK MOTOR</div>
+    <ul class="navbarop">
+      <li><a href="">HOME</a></li>
+      <li><a href="">SHOP</a></li>
+      <li><a href="">ABOUT</a></li>
+      <li><a href="">REVIEWS</a></li>
+      <li><a href="">CONTACT</a></li>
+    </ul>
+    <div class="user">
+      <i class="fa fa-sharp fa-user" style="color: rgb(255, 255, 255); cursor: pointer;"
+        onclick="toggleLoginPopup()"></i>
+    </div>
+    <div class="hamB">
+      <i class="fa fa-solid fa-bars on" id="on"></i>
+    </div>
+    <div class="slidenav">
+      <i class='bx bxs-x-circle close'></i>
+      <ul class="navigation1">
+        <li><a href="" class="out">HOME</a></li>
+        <li><a href="" class="out">SHOP</a></li>
+        <li><a href="" class="out">ABOUT</a></li>
+        <li><a href="" class="out">REVIEWS</a></li>
+        <li><a href="" class="out">CONTACT</a></li>
+      </ul><br>
+      <div class="user-nav">
+        <i class="fa fa-sharp fa-user out" onclick="toggleLoginPopup()"></i>
+      </div>
+
+    </div>
+  </header>
+
+
+  <section class="slider__warpper">
+    <div class="skewed">
+      <div class="text">
+        <h1 class="car-t">Audi</h1>
+        <p class="car-p">Classic</p>
+      </div>
+      <div class="image-c">
+        <img src="./Image/Audi.png" alt="" class="image-main">
+      </div>
+    </div>
+
+    <div>
+      <i class="fa-sharp fa-solid fa-arrow-left" style="color: #ff0000;"></i>
+      <i class="fa-sharp fa-solid fa-arrow-right" style="color: #ff0000;"></i>
+    </div>
+  </section>
+  <br><br>
+
+  <div
+    style="display: flex; justify-content: center; background: #ff0000; padding: 10px; clip-path: polygon(38% 0, 69% 0, 64% 100%, 33% 100%);">
+    <h1 style="display: flex; justify-content: center; align-items: center; color: #ffffff;">SERIVCES</h1>
+  </div>
+
+  <br>
+  <div class="card-section">
+    <div class="flipping-cards">
+
+      <div class="profile-card first-profile-card">
+
+        <div class="profile-card-front profile-card-face">
+          <img src="./Card/one-way-car-rental.jpg" alt="profile-picture" class="profile-picture" height="220px" />
+
+          <h2 class="name">RENT CAR</h2>
+        </div>
+
+        <div class="profile-card-back profile-card-face">
+          <div class="about-section">
+            <h2 class="about-title">About</h2>
+            <p class="about-text">
+              Olivia Johnson is a senior software engineer with over 6 years of experience in the technology industry.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="profile-card second-profile-card">
+
+        <div class="profile-card-front profile-card-face">
+          <img src="./Card/car-wash.jpg" alt="profile-picture" class="profile-picture" />
+
+          <h2 class="name">CAR WASH</h2>
+        </div>
+
+        <div class="profile-card-back profile-card-face">
+          <div class="about-section">
+            <h2 class="about-title">About</h2>
+            <p class="about-text">James Ethan has a wealth of experience in leading cross-functional teams and a track
+              record of delivering successful products.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="profile-card third-profile-card">
+
+        <div class="profile-card-front profile-card-face">
+          <img src="./Card/photo.avif" alt="profile-picture" class="profile-picture" />
+
+          <h2 class="name">CAR REPAIR</h2>
+        </div>
+
+        <div class="profile-card-back profile-card-face">
+          <div class="about-section">
+            <h2 class="about-title">About</h2>
+            <p class="about-text">
+              Grace Victoria is a data scientist with over 5 years of experience extracting valuable insights from
+              complex datasets.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="profile-card third-profile-card">
+
+        <div class="profile-card-front profile-card-face">
+          <img src="./Card/photo.avif" alt="profile-picture" class="profile-picture" />
+
+          <h2 class="name">CAR REPAIR</h2>
+        </div>
+
+        <div class="profile-card-back profile-card-face">
+          <div class="about-section">
+            <h2 class="about-title">About</h2>
+            <p class="about-text">
+              Grace Victoria is a data scientist with over 5 years of experience extracting valuable insights from
+              complex datasets.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+  <section>
+
+    <div
+      style="display: flex; justify-content: center; background: #ff0000; padding: 10px; clip-path: polygon(38% 0, 69% 0, 64% 100%, 33% 100%);">
+      <h1 style="display: flex; justify-content: center; align-items: center; color: #ffffff;">VEHICLES</h1>
+    </div>
+    <br><br><br>
+
+    <section class="main-design">
+      <div class="shape">
+        <div class="blob-shape"></div>
+        <img src="./Image/chevrolet-camaro_bg.png" alt="" class="moving-car">
+      </div>
+      <div class="selection">
+        <div class="Option-bar">
+          <div class="popular">Top Popular</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <div class="new-cars">New Cars</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <div class="sale-off">Sale Off</div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <img src="./Image/Chevrolet-Camaro-ZL1-7.jpg" alt="" class="img-car">
+            <div class="card-content">
+              <h3>Chevrolet Camaro</h3>
+              <p>Price: $10,000</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./Image/Mercedes-Benz1.jpg" alt="" class="img-car">
+            <div class="card-content">
+              <h3>Mercedes Benz</h3>
+              <p>Price: $15,000</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./Image/" alt="" class="img-car">
+            <div class="card-content">
+              <h2>Title 3</h2>
+              <p>Price: $12,000</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br>
+    <div
+      style="display: flex; justify-content: center; background: #000000; padding: 10px; clip-path: polygon(38% 0, 69% 0, 64% 100%, 33% 100%);">
+      <h1 style="display: flex; justify-content: center; align-items: center; color: #ffffff;">DESCRIPTION</h1>
+    </div>
+    <br>
+    <div class="background-container">
+      <div class="overlay-text">
+        <h4>"Pak Motor is your ultimate destination for everything automotive in Pakistan. Discover the latest car
+          models,motorcycles, and more with detailed specs and reviews. Our user-friendly platform caters to both
+          enthusiasts and buyers, providing a comprehensive experience tailored to the Pakistani market.
+          Navigate our marketplace with ease, connecting sellers and buyers seamlessly for transparent and secure
+          transactions. Stay in the know
+          with our regularly updated blog, offering insights into industry trends and maintenance tips. Pak Motor is not
+          just a marketplace; it's a community
+          where enthusiasts come together to share experiences and stay informed.
+          Trust Pak Motor for a smooth and reliable journey in the dynamic world of Pakistani automobiles."</h4>
+      </div>
+    </div>
+    <br>
+
+    <footer class="footer bg-light text-dark py-4">
+      <div class="container text-center">
+        <p>&copy; 2024 Your Company. All rights reserved.</p>
+      </div>
+    </footer>
+    
+    
+
+    <div class="scrollup"
+      style="position: fixed; bottom: 20px; right: 50px; background-color: rgb(77, 212, 205); color: #000000; padding: 10px; border-radius: 70px;  cursor: pointer; font-size: 24px;">
+      <i class="fas fa-arrow-up" style="font-size: 35px;"></i>
+    </div>
+
+
+    <!--Login Pop-up-->
+    <div class="login-popup" id="loginPopup">
+      <i class="fa fa-sharp fa-user" style="color: #ff0000; font-size: 35px;" id="user-icon"></i>
+      <form action="" class="login-form">
+        <i class="fa fa-close" onclick="toggleLoginPopup()"></i>
+        <label for="username">Name</label>
+        <input type="text" class="login-input" placeholder="Username" id="username" required><br>
+        <label for="password">Password</label>
+        <input type="password" class="login-input" placeholder="Password" id="password" required>
+        <input type="checkbox" id="privacyCheckbox" value="I agree to Privacy Policy"> I agree to Privacy Policy
+        <button class="login-button" onclick="login()">Login</button>
+      </form>
+    </div>
+
+
+    <script src="./Query.js"></script>
+    <script>
+      function toggleLoginPopup() {
+        $('#loginPopup').toggle();
+      }
+
+      $("html, body").on("click", "#loginButton", function () {
+        login();
+      });
+
+      function login() {
+        var username = $('#username').val();
+        var password = $('#password').val();
+
+        if (username !== '' && password !== '') {
+          alert('Logged in successfully and Privacy Policy accepted!');
+        } else {
+          alert('Please fill in both fields.');
+        }
+      }
+    </script>
+    <script>
+      $(document).ready(function () {
+        var currentPosition = 0;
+
+        $(".fa-arrow-up").click(function () {
+          if (currentPosition > 0) {
+            currentPosition--;
+            $(".card").css({
+              width: '100%',
+              display: 'flex',
+              flexDirection: 'row',
+              gap: '5px',
+              margin: '5px 0',
+              padding: '0px 15px 0px 0px',
+              backgroundcolor: '#606060',
+              border: '1px solid #ccc',
+              borderradius: '5px',
+              cursor: 'pointer',
+            });
+          }
+          updateCards();
+        });
+
+        $(".fa-arrow-down").click(function () {
+          if (currentPosition < $(".card").length - 3) {
+            currentPosition++;
+            $(".card").css({
+              width: '100%',
+              display: 'flex',
+              flexDirection: 'row',
+              gap: '5px',
+              margin: '5px 0',
+              padding: '0px 15px 0px 0px',
+              backgroundcolor: '#606060',
+              border: '1px solid #ccc',
+              borderradius: '5px',
+              boxsizing: 'border-box',
+              cursor: 'pointer',
+            });
+          }
+          updateCards();
+        });
+
+        function updateCards() {
+          $(".card").hide();
+          $(".card").slice(currentPosition, currentPosition + 3).show();
+        }
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        // Set the default active state for the first element with index 0
+        $('.Option-bar > div:eq(0)').addClass('active');
+
+        // Handle click events to toggle the 'active' class
+        $('.Option-bar > div').click(function () {
+          // Remove 'active' class from all elements
+          $('.Option-bar > div').removeClass('active');
+
+          // Add 'active' class to the clicked element
+          $(this).addClass('active');
+        });
+      });
+
+    </script>
+
+</body>
+
+</html>
